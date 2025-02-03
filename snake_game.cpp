@@ -20,6 +20,7 @@ void Setup()
 	fruitx = rand() % width;
 	fruity = rand() % height;
 	score = 0;
+    // dir=STOP;
 }
 void Draw()
 {
@@ -62,20 +63,11 @@ void Draw()
 						if (p % 3 == 1)
 						{
 							cout << "O";
-							
-
-
 
 						}
-							
-
 						else
 						{
-							
 							cout << "o";
-							
-							
-
 						}
 						
 						print = true;
@@ -95,12 +87,6 @@ void Draw()
 		}cout << endl;
 	}
 	
-
-
-
-
-
-
 	for (int i = 0; i < width+2; i++)
 	{
 		cout << "#";
@@ -129,6 +115,7 @@ void Input()
 			dir = DOWN;
 			break;
 		case 'x':
+            gameOver=true;
 			break;
 		}
 	}
@@ -217,7 +204,7 @@ int main()
 	while (!gameOver)
 	{
 		Draw();
-		Sleep(10);
+		Sleep(50);
 		Input();
 		Logic();
 	}
