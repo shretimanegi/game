@@ -1,4 +1,4 @@
 # game
 snake game.
 <br>
-Author-Shretima Negi
+Author-Shretima Negi(NSUT)
